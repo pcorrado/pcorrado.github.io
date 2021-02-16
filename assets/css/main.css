@@ -4897,11 +4897,11 @@ input, select, textarea {
 			-webkit-flex-grow: 0;
 			-ms-flex-grow: 0;
 			flex-grow: 0;
-			-moz-flex-shrink: 0;
-			-webkit-flex-shrink: 0;
-			-ms-flex-shrink: 0;
-			flex-shrink: 0;
-			width: 35%;
+			-moz-flex-shrink: 1
+			-webkit-flex-shrink: 1;
+			-ms-flex-shrink: 1;
+			flex-shrink: 1;
+			width: 50%;
 			min-width: 25rem;
 			border-radius: 0;
 		}
