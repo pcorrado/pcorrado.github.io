@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Philip Corrado's Open-Source Projects</title>
+		<title>Philip Corrado's Research Projects</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -20,14 +20,14 @@
 				<!-- One -->
 					<section class="banner style1 orient-left content-align-left image-position-right onload-image-fade-in onload-content-fade-right">
 						<div class="content">
-							<h1>Philip Corrado's Projects and Code</h1>
+							<h1>Philip Corrado's Research Projects in Medical Imaging</h1>
 							<ul>
                 <p class="majorNoSpace">Medical Physics PhD Student</p>
                 <p class="majorNoSpace">University of Wisconsin-Madison Class of 2021</p>
                 <p class="majorNoSpace">Research Interests:</p>
-								<p class="noSpace2">MRI acquisition and reconstruction</p>
+								<p class="noSpace">MRI acquisition and reconstruction</p>
                 <p class="noSpace">AI in medical image analysis</p>
-								<p class="noSpace">Medical imaging in clincal trials and translational studies</p>
+								<p class="noSpace2">Medical imaging in clincal trials and translational studies</p>
 
 
                 <a class="noSpace" href="https://www.linkedin.com/in/philip-corrado-657829187/">LinkedIn</a>
@@ -41,14 +41,19 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<h2>Dual-Venc 4D Flow MRI Acquisition & Reconstruction</h2>
-							<p>This velocity encoding strategy increases the sensitivity to slow flow while maintaining a high dynamic range of velocities that can be measured.</p>
+							<h2>Dual-Venc (DV) 4D Flow MRI Acquisition & Reconstruction</h2>
+							<p>This velocity encoding strategy increases the sensitivity to slow flow while maintaining a high dynamic range of velocities that can be measured.
+								 The downside of this method is it requires longer scan times. To overcome this addition, I compared two radial trajectories a in vitro for DV cardiac 4D flow imaging: 3D radial (PC-VIPR)
+								 versus stack of stars radial (PC-SOS), with benchtop particle imaging velocimetry serving as a reference standard. </p>
 							<ul class="actions stacked">
-								<li><a href="https://github.com/pcorrado/imageNetClassification" class="button">Github Repository</a></li>
+								<li><a href="https://github.com/uwmri/mri_recon/commit/46a399301d10d14ae3b3f54c393002205cd670b1" class="button">Phase correction code (4D FFT for unwrapping - C++)</a></li>
+								<li><a href="https://github.com/uwmri/pcvipr_wrapper/commit/7f54ab4bafc8942fed92cea630a2ddf6af6841f2" class="button">Recon code (flow-encoding [Private] - C++)</a></li>
+								<li><a href="https://github.com/pcorrado/LV-Phantom-4D-Flow-MRI-PIV" class="button">Post-processing code (validation - Matlab)</a></li>
+								<li><a href="https://onlinelibrary.wiley.com/doi/10.1002/mrm.28698" class="button">Validation paper</a></li>
 							</ul>
 						</div>
 						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
+							<img src="images/dvPaperImg.jpg" alt="" />
 						</div>
 					</section>
 
