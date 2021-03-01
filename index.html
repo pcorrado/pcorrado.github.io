@@ -25,9 +25,9 @@
                 <p class="majorNoSpace">Medical Physics PhD Student</p>
                 <p class="majorNoSpace">University of Wisconsin-Madison Class of 2021</p>
                 <p class="majorNoSpace">Research Interests:</p>
-								<p class="noSpace">MRI acquisition and reconstruction</p>
+								<p class="noSpace">Medical imaging in clincal trials and translational studies</p>
                 <p class="noSpace">AI in medical image analysis</p>
-								<p class="noSpace2">Medical imaging in clincal trials and translational studies</p>
+								<p class="noSpace2">MRI acquisition and reconstruction</p>
 								<a class="noSpace2" href="https://www.linkedin.com/in/philip-corrado-657829187/">LinkedIn</a>
 								<br>
 								<a class="noSpace2" href="https://scholar.google.com/citations?hl=en&user=mdSy4ZAAAAAJ">Google Scholar</a>
@@ -39,7 +39,29 @@
 					</section>
 
 				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Advanced cardiac MRI and PET in clinical trials</h2>
+						<p>I’ve used 4D flow MRI in clinical studies and trials too, with the end goal of advancing the management of cardiovascular disease.
+							As part of this work, I’ve worked in collaborative teams of cardiologists, radiologists, scientists, engineers, and biostatisticians to design and execute clinical trials and studies on cardiovascular diseases and interventions using MRI and simultaneous PET/MRI imaging endpoints.
+							In clinical trials looking to study cardiac physiology in adults born extremely premature, my team is assessing pharmaceutical interventions (NCT03696758 and NCT04090866 on clinicaltrials.gov) and hypoxic gas as a stress test (NCT03245723).
+							Throughout the projects I’ve taken the lead on image analysis methods for advanced cardiac MR images, writing custom code in Matlab and python to measure imaging biomarkers demonstrated in the literature.
+							I’ve also led the statistical analysis and interpretation efforts pertaining to these and PET images, with help from clinicians and biostatisticians, resulting in 3 first-authored publications in the late stages of peer-review stemming from these trials.
+							In the later 2 trials, I’ve also been involved in setting up the imaging protocols including MRI and PET acquisition parameters and data management.</p>
+						<ul class="actions stacked">
+							<li><a href="https://drive.google.com/file/d/1wSrb-66dQS-GzYHKpvuN594OoEbjEeUo/view?usp=sharing" class="button">4D Flow Paper#1 (preterm subjects flow)</a></li>
+							<li><a href="https://drive.google.com/file/d/17y0HKTlz9Vrgb4-DgubeSecN_rAJ8Yo2/view?usp=sharing" class="button">4D Flow Paper#2 (preterm w/drug intervention)</a></li>
+							<li><a href="https://drive.google.com/file/d/1TZHGj-ZHiSeAig13hpsNov02Y2KcsTu8/view?usp=sharing" class="button">Dynamic FDG PET Paper (hypoxia challenge)</a></li>
+							<li><a href="https://github.com/pcorrado/Dynamic-Cardiac-FDG-Kinetic-Modeling" class="button">Kinetic Modelling Code (FDG PET - Matlab)</a></li>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/petPaperImg.jpg" alt="" />
+					</div>
+				</section>
+
+				<!-- Three -->
+				<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
 							<h2>Dual-Venc 4D Flow MRI Acquisition & Reconstruction</h2>
 							<p>4D flow MRI uses the sensitivity of spins' phases to velocity and gradient first moments to map the 3-directional, time-resolved velocity field in a volumetric region in vivo.
@@ -61,66 +83,44 @@
 						</div>
 					</section>
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Real-time Cardiac bSSFP MRI Acquisition & Reconstruction</h2>
-							<p>Cardiac MRI (CMR) is a powerful tool for assessing myocardial anatomy and function.
-								 Traditional breathheld 'cine' acquisitions take data from multiple heartbeats and combine them to reconstruct one composite heartbeat.
-								 ‘Real-time’ imaging instead of cine uses image acceleration to acquire data fast enough to reconstruct images with beat-to-beat cardiac dynamics,
-								 Thereby removing the need for breathholds and cardiac gating, enabling imaging of patients during an exercise stress test that cannot hold their breath.
-								 I employed aggressive undersampling with radial sampling, parallel imaging, and compressed sensing for real-time CMR during exercise and analyzed the performance of this approach in
-								 a numerical phantom and in a human volunteer.</p>
-							<ul class="actions stacked">
-								<li><a href="https://github.com/uwmri/mri_recon/commit/9921407007cfc9c0517d74260cd89e3af9072698" class="button">Recon code (real-time data binning - C++)</a></li>
-								<li><a href="https://github.com/uwmri/pcvipr_wrapper/commit/81dea2d4f2e31945eb3d9e6821a7ef9a2747340b" class="button">Recon code (2D multislice trajectory [Private] - C++)</a></li>
-								<li><a href="https://github.com/pcorrado/Real-time-CMR-Reconstruction" class="button">BART Recon script (uses BART toolbox - bash)</a></li>
-								<li><a href="https://drive.google.com/file/d/1ztn4kVrEHsutN0MmbqOUJouGv9XDFWNr/view?usp=sharing" class="button">2021 ISMRM Abstract</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/rtAbstractImg.jpg" alt="" />
-						</div>
-					</section>
-
 				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>Automatic 4D flow post-processing using deep learning</h2>
-							<p>I have become involved in the use of AI for image processing to shorten the long processing times necessitated by the large number of images generated by 4D Flow MRI.
-								Using convolution neural networks, I’ve automated two tasks: heart ventricle segmentation and blood vessel detection.
-								These methods allow fully automated measurement of hemodynamic parameters from 4D flow data such as intraventricular kinetic energy and flow in each of the great vessels.
-								I’m currently comparing the segmentation method against radiologist manual processing and will publish the results thereafter.</p>
-							<ul class="actions stacked">
-								<li><a href="https://github.com/pcorrado/Cardiac-Segmentation-4D-Flow" class="button">DL training code (cardiac segmentation - python)</a></li>
-								<li><a href="https://github.com/pcorrado/ChestFlowSlicer" class="button">GUI for manual processing (cut-plane placement - python)</a></li>
-								<li><a href="http://society4mra.org/wp-content/uploads/2020/11/SMRA-2020-Program-Book-v3.0.pdf" class="button">2020 SMRA Abstract (67th page of PDF)</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/dlAbstractImg.jpg" alt="" />
-						</div>
-					</section>
+				<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+					<div class="content">
+						<h2>Real-time Cardiac bSSFP MRI Acquisition & Reconstruction</h2>
+						<p>Cardiac MRI (CMR) is a powerful tool for assessing myocardial anatomy and function.
+							 Traditional breathheld 'cine' acquisitions take data from multiple heartbeats and combine them to reconstruct one composite heartbeat.
+							 ‘Real-time’ imaging instead of cine uses image acceleration to acquire data fast enough to reconstruct images with beat-to-beat cardiac dynamics,
+							 Thereby removing the need for breathholds and cardiac gating, enabling imaging of patients during an exercise stress test that cannot hold their breath.
+							 I employed aggressive undersampling with radial sampling, parallel imaging, and compressed sensing for real-time CMR during exercise and analyzed the performance of this approach in
+							 a numerical phantom and in a human volunteer.</p>
+						<ul class="actions stacked">
+							<li><a href="https://github.com/uwmri/mri_recon/commit/9921407007cfc9c0517d74260cd89e3af9072698" class="button">Recon code (real-time data binning - C++)</a></li>
+							<li><a href="https://github.com/uwmri/pcvipr_wrapper/commit/81dea2d4f2e31945eb3d9e6821a7ef9a2747340b" class="button">Recon code (2D multislice trajectory [Private] - C++)</a></li>
+							<li><a href="https://github.com/pcorrado/Real-time-CMR-Reconstruction" class="button">BART Recon script (uses BART toolbox - bash)</a></li>
+							<li><a href="https://drive.google.com/file/d/1ztn4kVrEHsutN0MmbqOUJouGv9XDFWNr/view?usp=sharing" class="button">2021 ISMRM Abstract</a></li>
+						</ul>
+					</div>
+					<div class="image">
+						<img src="images/rtAbstractImg.jpg" alt="" />
+					</div>
+				</section>
 
 					<!-- Five -->
-						<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
 							<div class="content">
-								<h2>Advanced cardiac MRI and PET in clinical trials</h2>
-								<p>I’ve used 4D flow MRI in clinical studies and trials too, with the end goal of advancing the management of cardiovascular disease.
-									As part of this work, I’ve worked in collaborative teams of cardiologists, radiologists, scientists, engineers, and biostatisticians to design and execute clinical trials and studies on cardiovascular diseases and interventions using MRI and simultaneous PET/MRI imaging endpoints.
-									In clinical trials looking to study cardiac physiology in adults born extremely premature, my team is assessing pharmaceutical interventions (NCT03696758 and NCT04090866 on clinicaltrials.gov) and hypoxic gas as a stress test (NCT03245723).
-									Throughout the projects I’ve taken the lead on image analysis methods for advanced cardiac MR images, writing custom code in Matlab and python to measure imaging biomarkers demonstrated in the literature.
-									I’ve also led the statistical analysis and interpretation efforts pertaining to these and PET images, with help from clinicians and biostatisticians, resulting in 3 first-authored publications in the late stages of peer-review stemming from these trials.
-									In the later 2 trials, I’ve also been involved in setting up the imaging protocols including MRI and PET acquisition parameters and data management.</p>
+								<h2>Automatic 4D flow post-processing using deep learning</h2>
+								<p>I have become involved in the use of AI for image processing to shorten the long processing times necessitated by the large number of images generated by 4D Flow MRI.
+									Using convolution neural networks, I’ve automated two tasks: heart ventricle segmentation and blood vessel detection.
+									These methods allow fully automated measurement of hemodynamic parameters from 4D flow data such as intraventricular kinetic energy and flow in each of the great vessels.
+									I’m currently comparing the segmentation method against radiologist manual processing and will publish the results thereafter.</p>
 								<ul class="actions stacked">
-									<li><a href="https://drive.google.com/file/d/1wSrb-66dQS-GzYHKpvuN594OoEbjEeUo/view?usp=sharing" class="button">4D Flow Paper#1 (preterm subjects flow)</a></li>
-									<li><a href="https://drive.google.com/file/d/17y0HKTlz9Vrgb4-DgubeSecN_rAJ8Yo2/view?usp=sharing" class="button">4D Flow Paper#2 (preterm w/drug intervention)</a></li>
-									<li><a href="https://drive.google.com/file/d/1TZHGj-ZHiSeAig13hpsNov02Y2KcsTu8/view?usp=sharing" class="button">Dynamic FDG PET Paper (hypoxia challenge)</a></li>
-									<li><a href="https://github.com/pcorrado/Dynamic-Cardiac-FDG-Kinetic-Modeling" class="button">Kinetic Modelling Code (FDG PET - Matlab)</a></li>
+									<li><a href="https://github.com/pcorrado/Cardiac-Segmentation-4D-Flow" class="button">DL training code (cardiac segmentation - python)</a></li>
+									<li><a href="https://github.com/pcorrado/ChestFlowSlicer" class="button">GUI for manual processing (cut-plane placement - python)</a></li>
+									<li><a href="http://society4mra.org/wp-content/uploads/2020/11/SMRA-2020-Program-Book-v3.0.pdf" class="button">2020 SMRA Abstract (67th page of PDF)</a></li>
 								</ul>
 							</div>
 							<div class="image">
-								<img src="images/petPaperImg.jpg" alt="" />
+								<img src="images/dlAbstractImg.jpg" alt="" />
 							</div>
 						</section>
 				<!-- Footer -->
